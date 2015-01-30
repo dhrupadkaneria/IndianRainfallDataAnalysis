@@ -1,0 +1,14 @@
+geochart codes -> the visualization of the data that we tried.
+geomaps -> periodograms, correlation and its corresponding values that we calculated.
+html help -> the web pages that we used as our references.
+original data -> the original data that you had sent us.
+papers -> the papaer that we used as references.
+Regional graph-data -> region wise data of the following:
+						jjas_mean 
+						anuual mean 
+						graphs that were plotted
+						any other experiment done on them.
+R-time series -> graphs of the time series analysis.
+
+
+

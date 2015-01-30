@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+     google.load('visualization', '1', {'packages': ['geochart']});
+     google.setOnLoadCallback(drawMarkersMap);
+
+      function drawMarkersMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['State', 'Rainfall'],
+        ['Gujarat', 2170.268],
+        ['Goa', 5954.31],
+        ['Kerala', 4812.342],
+        ['Orissa', 2924.465 ]
+      ]);
+
+      var options = {
+        region: 'IN',
+        displayMode: 'regions',
+		resolution: 'provinces',
+        colorAxis: {colors: ['green', 'blue']}
+      };
+
+      var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    };
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

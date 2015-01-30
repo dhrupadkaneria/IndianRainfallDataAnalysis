@@ -1,0 +1,7 @@
+
+> year <- asmmeg$Year
+> mean <- asmmeg$Mean_asmmeg
+> meandiff1_asm <- diff(mean, differences=1)
+> plot.ts(meandiff1_asm)
+> acf(meandiff1_asm, lag.max=20)
+> acf(meandiff1_asm, lag.max=20,plot=FALSE)
